@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="cups"
+name="printerbot"
 cid="$(docker ps -q --filter "name=${name}")"
 if [ -n "${cid}" ]; then
 	echo "Stopping container..."
@@ -13,5 +13,4 @@ if [ -n "${cid}" ]; then
 fi
 
 echo "Running container..."
-docker run --name ${name} --detach --restart=always --privileged --volume /dev/bus/usb:/dev/bus/usb --publish 631:631 ${name}
-
+docker run --name ${name} --detach --restart=always --privileged --volume /dev/bus/usb:/dev/bus/usb --mount source=cups-conf,destination=/etc/cups --publish 631:631 ${name}

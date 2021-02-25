@@ -1,0 +1,4 @@
+.idea/
+TelegramBotPrinter/telegram_bot_printer/__pycache__/
+documents_downloaded/*
+*.egg-info

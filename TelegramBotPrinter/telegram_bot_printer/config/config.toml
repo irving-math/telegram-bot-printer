@@ -1,0 +1,19 @@
+[printer_bot]
+start_message = "Hola!"
+auth_message_already_auth = "Ya fuiste autentificado antes."
+auth_message_auth_ok = "Listo!, ya puedes usar el bot."
+auth_message_pass_wrong = "El password que pusiste fue incorrecto."
+password_bot = "fancypassword"
+not_authentified_message = 'No puedes imprimir sin haberte autentificado. Identificate porfavor.'
+file_size_limit = 67108864
+file_is_big = 'El archivo sobrepasa los 64Mb'
+dowloading_file_message = 'Descargando el archivo...'
+path_documents = '/home/documents_downloaded'
+file_printed_message = 'Listo, el archivo se mando a imprimir.'
+token_bot = 'fancytoken'
+
+
+[project]
+auth_service = "RamAuthorizedUsers"
+printer_service = "LPPrinter"
+user_lp = 'admin'

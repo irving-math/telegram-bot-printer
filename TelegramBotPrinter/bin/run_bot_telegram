@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import logging
+
+from telegram_bot_printer.bot import TelegramBot
+from telegram_bot_printer.bot_printer import printer_bot_config
+
+log = logging.getLogger(__name__)
+
+log.debug("Creating bot...")
+printer_bot = TelegramBot(printer_bot_config)
+printer_bot.init()
+log.debug("Bot is running.")
